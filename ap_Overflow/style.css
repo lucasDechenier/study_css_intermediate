@@ -1,0 +1,114 @@
+/* Aprendendo sobre overflow - Serve para delimitar conteúdo a área do pai
+    Visible - visível
+    hidden - irá esconder o que estiver fora
+    scroll - Ter uma barra de rolagem
+    auto - irá colocar scroll onde precisa, caso não tenha tamanho, irá se adequar
+    Podemos determinar também:
+    overflow-y, overflow-x
+*/
+
+#container{
+    overflow: auto;
+    color: white;
+    background-color: blue;
+    width: 300px;
+    height: 100px;
+}
+/* Alinhamento Horizontal - SO FUNCIONA COM DISPLAY BLOCK*/
+/* Qualquer elemento inline, inline-bloc pode ser utilizado a propriedade text-align */
+
+#quad{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+/* Posicionamento de elementos
+ Static: vai fazer com o que o elemento se encaixe.
+
+ Relative: vai ser em relação ao posicionamento static.
+
+ Absolute: Posição inicial dele não afeta outros elementos, a posição é 
+ relativa ao elemento pai, desde que o pai não tenha um posicionamento estático.
+
+ Fixed: O elemento também não afeta outros elementos, se difere do Absolute 
+ pois fica em relação ao View Port, elemento fixo, fica sempre na mesma posição mesmo rolando a página.
+
+ Sticky: A diferença do Sticky para o Fixed é que o Sticky ainda influencia outros elementos, 
+ o sticky também não vai para a posição determinada de cara, mas mantém caso a rolagem atinga aquela posição*/
+
+.quadrado{
+    width: 100px;
+    height: 100px;
+}
+
+.quadro{
+    position: relative;
+    margin-top: 20px;
+    width: 500px;
+    height: 1000px;
+    border: 1px solid black;
+}
+.quadrado_azul{
+    position: sticky;
+    top: 0px;
+    background-color: blue;
+    left: 400px;
+}
+
+.quadrado_verde{
+    position: relative;
+    left: 400px;
+    top: 200px;
+    background-color: green;
+}
+.quadrado_vermelho{
+    background-color: red;
+}
+
+.quadrado_rosa{
+    position: fixed;
+    left: 450px;
+    background-color:pink;
+}
+/* float, permite que o elemento fique flutuando 
+    Clear: tira os elementos flutando (clear:left; clear:both;)
+*/
+img{
+    float: left;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    float: right;
+    padding: 10px;
+    background-color: purple;
+    margin: 5px;
+}
+
+/*Alinhamento Vertial */
+.card{
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 2px solid green;
+    float: left;
+    text-align: center;
+}
+.c1{
+    line-height: 200px;
+    background-color: red;
+}
+
+.c2{
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    position: absolute;
+    background-color: blue;
+    transform: translate(-50%,-50%);
+}
