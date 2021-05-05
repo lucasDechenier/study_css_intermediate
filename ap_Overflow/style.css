@@ -76,10 +76,11 @@
     Clear: tira os elementos flutando (clear:left; clear:both;)
 */
 img{
-    float: left;
+    display: block;
+    clear: both;
 }
 
-ul{
+/*ul{
     list-style: none;
 }
 
@@ -88,7 +89,7 @@ li{
     padding: 10px;
     background-color: purple;
     margin: 5px;
-}
+}*/
 
 /*Alinhamento Vertial */
 .card{
@@ -111,4 +112,71 @@ li{
     position: absolute;
     background-color: blue;
     transform: translate(-50%,-50%);
+}
+
+/* responsividade */
+
+.header{
+    margin: auto;
+    width: 80%;
+    height: 100px;
+    background-color: gray;
+}
+.content{
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    font-size: 6vw;
+}
+
+/* Media Queries */
+
+.head{
+    overflow: hidden;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 20px;
+    background-color: grey;
+}
+
+.menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+}
+
+li{
+    float: right;
+    margin-left: 10px;
+}
+
+.logo{
+    float: left;
+}
+
+/* Pense na responsividade na forma de largura */
+
+@media screen and (max-width: 840px) {
+    .logo{
+        float: none;
+        text-align: center;
+    }
+    .menu{
+        margin-top: 20px;
+        float: none;
+        text-align: center;
+    }
+    li{
+        float: none;
+        margin-bottom: 5px;
+        padding: 10px;
+    }
+    .head{
+        background-color: chartreuse;
+    }
+    
 }
