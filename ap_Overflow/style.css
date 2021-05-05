@@ -15,7 +15,7 @@
     height: 100px;
 }
 /* Alinhamento Horizontal - SO FUNCIONA COM DISPLAY BLOCK*/
-/* Qualquer elemento inline, inline-bloc pode ser utilizado a propriedade text-align */
+/* Qualquer elemento inline, inline-block pode ser utilizado a propriedade text-align */
 
 #quad{
     margin: auto;
@@ -25,7 +25,7 @@
 }
 
 /* Posicionamento de elementos
- Static: vai fazer com o que o elemento se encaixe.
+ Static: vai fazer com que o elemento se encaixe.
 
  Relative: vai ser em relação ao posicionamento static.
 
@@ -91,7 +91,7 @@ li{
     margin: 5px;
 }*/
 
-/*Alinhamento Vertial */
+/*Alinhamento Vertical */
 .card{
     position: relative;
     width: 400px;
